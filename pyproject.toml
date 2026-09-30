@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "apex-gateway-core"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = [
+    "flask",
+    "python-dotenv",
+    "psycopg[binary]",
+]
+
+[tool.setuptools]
+packages = ["shared", "gateway", "downstream"]
